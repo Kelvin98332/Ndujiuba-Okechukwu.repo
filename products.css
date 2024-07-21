@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*VARIABLES*/
+:root{
+    --bcolor:navajowhite;
+    --bbcolor:white;
+}
+/*GENERAL STYLES*/
+body{
+    background-color: var(--bcolor);
+    min-height: 100vh;
+}
+article{
+    border: 2px solid transparent;
+    width: 500px;
+    height: 300px;
+    margin: 7.5rem auto;
+    display: flex;
+}
+.div1 img{
+    border-radius: 5px;
+}
+.div2{
+    background-color: var(--bbcolor);
+    padding: 10px;
+    border-radius: 5px;
+    width: 250px;
+}
+.p1{
+    font-size: 15px;
+    letter-spacing: 5px;
+    margin: 10px;
+}
+.div2 h1{
+    margin: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.p2{
+    font-size: 15px;
+    line-height: 20px;
+    margin: 10px;
+}
+.aside1{
+    display: flex;
+    margin: 10px;
+    gap: 5px;
+}
+.aside1 .item1{
+    color: green;
+    font-size: 1.5rem;
+}
+.aside1 .item2{
+    font-size: 15px;
+    text-decoration: line-through;
+}
+.aside2{
+    margin:10px;
+}
+.aside2 a{
+    background-color: green;
+    color: var(--bbcolor);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+@media screen and (max-width:500px){
+    article{
+        border: 2px solid transparent;
+        width: 250px;
+        height: 300px;
+        margin: 7.5rem 4rem;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .div1 img{
+        border-radius: 5px 5px 0 0;
+        height: 200px;
+    }
+    .div2{
+        background-color: var(--bbcolor);
+        padding: 10px;
+        border-radius:  0 0 5px 5px;
+        width: 250px;
+    }
+}
+@media screen and (max-width:350px){
+    article{
+        border: 2px solid transparent;
+        width: 250px;
+        height: 300px;
+        margin: 7.5rem 2.5rem;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .div1 img{
+        border-radius: 5px 5px 0 0;
+        height: 200px;
+    }
+    .div2{
+        background-color: var(--bbcolor);
+        padding: 10px;
+        border-radius:  0 0 5px 5px;
+        width: 250px;
+    }
+}
